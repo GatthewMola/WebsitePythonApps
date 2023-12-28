@@ -27,14 +27,13 @@ Builder.load_string("""
         name: 'first_screen'
 """)
 
-# Because we are only utilizing one screen at this point in our app, we only require one screen class.
-# Comments for individual method actions found in Section17 Notebook
+# Each new screen will require separate class
 class FirstScreen(Screen):
 
     def search_image(self):
         query = self.manager.current_screen.ids.user_query.text
         page = wikipedia.page(query)
-        image_link = page.images[0]
+        image_link = page.images[0] # This will force the app to choose the first photo found from query input.
         urllib.request.urlretrieve(image_link, 'query_image.jpg')
         self.manager.current_screen.ids.img.source = 'query_image.jpg'
 

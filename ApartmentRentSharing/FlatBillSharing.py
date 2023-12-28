@@ -1,6 +1,4 @@
 from fpdf import FPDF
-# fpdf module not showing as downloaded in this folder for some reason. Should work on interviewer system, however.
-# Will debug in separate folder or conda environment if need be.
 
 class Bill:
     """
