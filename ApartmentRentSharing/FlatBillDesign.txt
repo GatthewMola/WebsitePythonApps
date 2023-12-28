@@ -1,12 +1,12 @@
-Title: Flatmates Bill Sharing
+Title: Apartment Roommates Rent Sharing
 
-Description: The Flatmates Bill Sharing app will allow those who live in the flat to determine
-their individual monthly rent and utility bill based on how long the flatmate has spent
-actually residing in the flat in a given month.
-The app will generate a PDF report that explains how much each flatmate will need to pay in
+Description: The Apartment Roommates Rent Sharing app will allow those who live in the apartment to determine
+their individual monthly rent and utility bill based on how long the roommate has spent
+actually residing in the apartment in a given month.
+The app will generate a PDF report that explains how much each roommate will need to pay in
 the given pay period that is input.
 
 Object: Attributes
     Bill: Amount, Period
-    Flatmates: Name, Days_in_Flat, Pays(Bill)
-    PdfReport: file_name, generate(Flatmate1, Flatmate2, Bill)
+    Flatmates: Name, Days_in_Apartment, Pays(Bill)
+    PdfReport: file_name, generate(Roommate1, Roommate2, Bill)
