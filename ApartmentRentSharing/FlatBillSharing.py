@@ -1,5 +1,6 @@
-import webbrowser
 from fpdf import FPDF
+# fpdf module not showing as downloaded in this folder for some reason. Should work on interviewer system, however.
+# Will debug in separate folder or conda environment if need be.
 
 class Bill:
     """
@@ -68,8 +69,8 @@ class PdfReport:
         pdf.cell(w=100, h=25, txt=roommate2.name, border=0)
         pdf.cell(w=175, h=25, txt=roommate2_pay, border=0, ln=1)
 
-        pdf.output(self.filename)
-        # Need to debug this file path. According to lecture, I need an absolute path for this method to run, syntax is wrong right now
+        pdf.output('file:// + /Users/mattgola/Documents/Github/WebsitePythonApps/ApartmentRentSharing/Report1.pdf(self.filename)')
+        # Need absolute file path for MacOS
         # webbrowser.open('file://' + /Users/mattgola/Documents/GitHub/PythonCourse/.vscode/FlatBillSharing_App/Report1.pdf(self.filename))
 
 
