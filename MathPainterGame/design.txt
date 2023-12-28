@@ -1,0 +1,49 @@
+Title: Math Painting
+Description: An app that lets the user provide the start coordinates of geometrical shapes such as
+squares and rectangles, their dimensions, and their colors, and the program produces an image file canvas with all
+the geometrical shapes drawn in it.
+Objects: Square:
+            x
+            y
+            side
+            color
+            draw(canvas)
+         Rectangle:
+            x
+            y
+            width
+            height
+            color
+            draw(canvas)
+         Canvas:
+            width
+            height
+            color
+            make(imagepath)
+
+Print Statements:
+"Enter canvas width: "
+"Enter canvas height: "
+"Enter canvas color (white or black): "
+"What do you like to draw? Enter quit to quit: "
+   # Program only draws rectangles or squares
+"Enter x of the rectangle: "
+   # Coordinates in Python start in the upper left corner (0, 0)
+"Enter y of the rectangle: "
+"Enter the width of the rectangle: "
+"Enter the height of the rectangle: "
+"How much red should the rectangle have: "
+"How much green: "
+"How much blue: "
+   # RGB ranges to determine color of the rectangle
+"What do you like to draw? Enter quit to quit: "
+"Enter x of the square: "
+"Enter y of the square: "
+"Enter the side length of the square: "
+"How much red should the square have: "
+"How much green: "
+"How much blue: "
+"What do you like to draw? Enter quit to quit: "
+.
+.
+.
