@@ -36,6 +36,7 @@ class FirstScreen(Screen):
         image_link = page.images[0] # This will force the app to choose the first photo found from query input.
         urllib.request.urlretrieve(image_link, 'query_image.jpg')
         self.manager.current_screen.ids.img.source = 'query_image.jpg'
+        # Getting strange error on some inputs where the query image will not download as jpg.
 
 
 class RootWidget(ScreenManager):
